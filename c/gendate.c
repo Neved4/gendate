@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int is_leap_year(int year) {
+int leap_year(int year) {
     return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
 }
 
@@ -20,7 +20,7 @@ int main() {
 		current_date = gmtime(&current_sec);
 
 		is_leap = (
-			!is_leap_year(current_date->tm_year + 1900) &&
+			!leap_year(current_date->tm_year + 1900) &&
 			current_date->tm_mon == 1 &&
 			current_date->tm_mday == 29
 		);
