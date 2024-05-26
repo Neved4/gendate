@@ -3,7 +3,7 @@
 #include <time.h>
 
 int leap_year(int year) {
-    return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+	return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
 }
 
 int main() {
@@ -34,7 +34,7 @@ int main() {
 
 		is_end = (
 			(current_date->tm_year == 1100) &&
-			(current_date->tm_mon  == 0)    &&
+			(current_date->tm_mon == 0) &&
 			(current_date->tm_mday == 1)
 		);
 
