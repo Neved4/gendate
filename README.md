@@ -36,6 +36,22 @@ $ ./gendate | head -n4
 1970-01-04
 ```
 
+### Chicken Scheme
+
+Compile:
+```
+$ cd src/scheme && csc ./gendate.scm
+```
+
+Run it with:
+```console
+$ ./gendate | head -n4
+1970-01-01
+1970-01-02
+1970-01-03
+1970-01-04
+```
+
 ### Shell version
 
 Run it with:
@@ -51,6 +67,7 @@ $ ./gendate.sh | head -n4
 
 - C version: ≈ `168.7 ms`
 - Go version: ≈ `236.2 ms`
+- Scheme version: ≈ `1.622 s`
 - Shell version: ≈ `10 m 35 s`
 
 ## License
