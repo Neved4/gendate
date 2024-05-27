@@ -1,8 +1,16 @@
 # `dategen` - Generate dates! ⌚️
 
-List dates from January 1, 1970 ([UNIX Epoch]) to 3000 AD, including leap years.
+List dates from *January 1, 1970* ([UNIX Epoch]) to 3000 AD, including leap years.
 
 Dates are printed using [ISO 8601] format.
+
+## Motivation
+
+The original shell script for generating days took several minutes,
+prompting a rewrite in C. Additional implementations were incorporated to
+explore the problem across various languages.
+
+## Getting Started
 
 `cd` to `src/variant`, then compile with the command from table below:
 
@@ -10,14 +18,14 @@ Dates are printed using [ISO 8601] format.
 
 | Version | Run with                                     | Benchmark (≈)  |
 | :------ | :------------------------------------------- | :------------- |
-| **C**   | **`make gendate && ./gendate`**              | **`168.7 ms`** |
-| Go      | `go build gendate.go && ./gendate`           | `236.2 ms`     |
-| Scheme  | `csc gendate.scm && ./gendate`               | `1.995 s`      |
-| Haskell | `ghc gendate.hs -o gendate && ./gendate`     | `2.063 s`      |
+| **C**   | **`make gendate && ./gendate`**              | **`156.3 ms`** |
+| Rust    | `cargo build -r && ./target/release/gendate` | `213.0 ms`     |
+| Go      | `go build gendate.go && ./gendate`           | `234.6 ms`     |
+| Haskell | `ghc gendate.hs -o gendate && ./gendate`     | `715.0 ms`     |
+| Scheme  | `csc gendate.scm && ./gendate`               | `1.545 s`      |
 | Perl    | `./gendate.pl`                               | `2.310 s`      |
-| Lua     | `./gendate.lua`                              | `3.696s`       |
-| Shell   | `./gendate.sh`                               | `10 m 35 s`    |
-| Rust    | `cargo build -r && ./target/release/gendate` | `1.011 s`      |
+| Lua     | `./gendate.lua`                              | `3.377 s`      |
+| Shell   | `./gendate.sh`                               | `10.58 m`      |
 
 ###### All programs were measured with [`hyperfine`].
 
@@ -40,7 +48,7 @@ $ ./gendate
 ## License
 
 This repository is licensed under the terms of the [MIT License].
-
+   
 See the [LICENSE](LICENSE) file for details.
 
 [ISO 8601]: https://en.wikipedia.org/wiki/ISO_8601
