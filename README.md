@@ -17,7 +17,7 @@ Dates are printed using [ISO 8601] format.
 | Perl    | `./gendate.pl`                               | `2.310 s`      |
 | Lua     | `./gendate.lua`                              | `3.696s`       |
 | Shell   | `./gendate.sh`                               | `10 m 35 s`    |
-| Rust    | `cargo build -r && ./target/release/gendate` | `1.011 s`      |
+| Rust    | `cargo build -r && ./target/release/gendate` | `213.8 ms`      |
 
 ###### All programs were measured with [`hyperfine`].
 
