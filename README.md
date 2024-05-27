@@ -8,15 +8,16 @@ Dates are printed using [ISO 8601] format.
 
 <div align="center">
 
-| Version | Run with                                 | Benchmark (≈)  |
-| :------ | :--------------------------------------- | :------------- |
-| **C**   | **`make gendate && ./gendate`**          | **`168.7 ms`** |
-| Go      | `go build gendate.go && ./gendate`       | `236.2 ms`     |
-| Scheme  | `csc gendate.scm && ./gendate`           | `1.995 s`      |
-| Haskell | `ghc gendate.hs -o gendate && ./gendate` | `2.063 s`      |
-| Perl    | `./gendate.pl`                           | `2.310 s`      |
-| Lua     | `./gendate.lua`                          | `3.696s`       |
-| Shell   | `./gendate.sh`                           | `10 m 35 s`    |
+| Version | Run with                                     | Benchmark (≈)  |
+| :------ | :------------------------------------------- | :------------- |
+| **C**   | **`make gendate && ./gendate`**              | **`168.7 ms`** |
+| Go      | `go build gendate.go && ./gendate`           | `236.2 ms`     |
+| Scheme  | `csc gendate.scm && ./gendate`               | `1.995 s`      |
+| Haskell | `ghc gendate.hs -o gendate && ./gendate`     | `2.063 s`      |
+| Perl    | `./gendate.pl`                               | `2.310 s`      |
+| Lua     | `./gendate.lua`                              | `3.696s`       |
+| Shell   | `./gendate.sh`                               | `10 m 35 s`    |
+| Rust    | `cargo build -r && ./target/release/gendate` | `1.011 s`      |
 
 ###### All programs were measured with [`hyperfine`].
 
@@ -39,7 +40,7 @@ $ ./gendate
 ## License
 
 This repository is licensed under the terms of the [MIT License].
-   
+
 See the [LICENSE](LICENSE) file for details.
 
 [ISO 8601]: https://en.wikipedia.org/wiki/ISO_8601
