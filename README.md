@@ -4,12 +4,13 @@ List dates from 1970 ([UNIX Epoch]) to 3000 AD, including leap years.
 
 Dates are printed using [ISO 8601] format.
 
-| Version | Compile with                       | Run         |
-| :------ | :---------------------------------- | :----------- |
-| **C**       | `cd src/c && make gendate`         | `./gendate` |
-| **Go**      | `cd src/go && go build gendate.go` | `./gendate` |
-| **Scheme**  | `cd src/scheme && csc gendate.scm`                                   |    `./gendate`         |
-| **Shell**   |                                    |   `./src/sh/gendate.sh`          |
+| Version     | Compile with                       | Run                   |
+| :---------- | :--------------------------------- | :-------------------- |
+| **C**       | `cd src/c && make gendate`         | `./gendate`           |
+| **Go**      | `cd src/go && go build gendate.go` | `./gendate`           |
+| **Scheme**  | `cd src/scheme && csc gendate.scm` | `./gendate`           |
+| **Shell**   |                                    | `./src/sh/gendate.sh` |
+| **Haskell** | `cd src/hs && ghc --make gendate.hs -o gendate` | `./gendate` |
 
 ## Output
 
@@ -33,6 +34,7 @@ Each program was measured with [`hyperfine`]:
 - Go version: ≈ `236.2 ms`
 - Scheme version: ≈ `1.622 s`
 - Shell version: ≈ `10 m 35 s`
+- Haskell version: ≈ `2.063 s`
 
 ## License
 
