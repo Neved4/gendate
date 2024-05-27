@@ -1,20 +1,26 @@
 # `dategen` - Generate dates! ⌚️
 
-List dates from 1970 ([UNIX Epoch]) to 3000 AD, including leap years.
+List dates from January 1, 1970 ([UNIX Epoch]) to 3000 AD, including leap years.
 
 Dates are printed using [ISO 8601] format.
 
-`cd` to `src/variant`, then compile with the table below:
+`cd` to `src/variant`, then compile with the command from table below:
 
-| Version     | Compile or run with                             |
-| :---------- | :---------------------------------------------- |
-| **C**       | `make gendate && ./gendate`                     |
-| **Go**      | `go build gendate.go && ./gendate`              |
-| **Scheme**  | `csc gendate.scm && ./gendate`                  |
-| **Shell**   | `./gendate.sh`                                  |
-| **Haskell** | `ghc --make gendate.hs -o gendate && ./gendate` |
-| **Perl**    | `./gendate.pl`                                  |
-| **Lua**     | `./gendate.lua`                                 |
+<div align="center">
+
+| Version     | Run with                                 | Benchmark (≈) |
+| :---------- | :--------------------------------------- | :------------ |
+| **C**       | `make gendate && ./gendate`              | `168.7 ms`    |
+| **Go**      | `go build gendate.go && ./gendate`       | `236.2 ms`    |
+| **Scheme**  | `csc gendate.scm && ./gendate`           | `1.995 s`     |
+| **Haskell** | `ghc gendate.hs -o gendate && ./gendate` | `2.063 s`     |
+| **Perl**    | `./gendate.pl`                           | `2.310 s`     |
+| **Lua**     | `./gendate.lua`                          | `3.696s`      |
+| **Shell**   | `./gendate.sh`                           | `10 m 35 s`   |
+
+###### All programs were measured with [`hyperfine`].
+
+</div>
 
 ## Output
 
@@ -29,18 +35,6 @@ $ ./gendate
 2999-12-31
 3000-01-01
 ```
-
-## Benchmarks
-
-Each program was measured with [`hyperfine`]:
-
-- C version: ≈ `168.7 ms`
-- Go version: ≈ `236.2 ms`
-- Scheme version: ≈ `1.995 s`
-- Haskell version: ≈ `2.063 s`
-- Perl version: ≈ `	2.310 s`
-- Lua version: ≈ `3.696s`
-- Shell version: ≈ `10 m 35 s`
 
 ## License
 
