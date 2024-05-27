@@ -14,6 +14,7 @@ Dates are printed using [ISO 8601] format.
 | **Shell**   | `./gendate.sh`                                  |
 | **Haskell** | `ghc --make gendate.hs -o gendate && ./gendate` |
 | **Perl**    | `./gendate.pl`                                  |
+| **Lua**     | `./gendate.lua`                                 |
 
 ## Output
 
@@ -38,6 +39,7 @@ Each program was measured with [`hyperfine`]:
 - Scheme version: ≈ `1.995 s`
 - Haskell version: ≈ `2.063 s`
 - Perl version: ≈ `	2.310 s`
+- Lua version: ≈ `3.696s`
 - Shell version: ≈ `10 m 35 s`
 
 ## License
