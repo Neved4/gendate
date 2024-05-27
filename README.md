@@ -7,10 +7,13 @@ Dates are printed using [ISO 8601] format.
 ## Motivation
 
 The original shell script for generating days took several minutes,
-prompting a rewrite in C. Additional implementations were incorporated to
-explore the problem across various languages.
+prompting a rewrite in C.  
+Additional implementations were incorporated to explore the problem across
+other languages.
 
 ## Getting Started
+
+### Building
 
 `cd` to `src/variant`, then compile with the command from table below:
 
@@ -31,9 +34,9 @@ explore the problem across various languages.
 
 </div>
 
-## Output
+### Output
 
-Each program produces output similar to:
+Each implementation produces output equivalent to:
 ```console
 $ ./gendate
 1970-01-01
