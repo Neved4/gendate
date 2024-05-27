@@ -4,14 +4,16 @@ List dates from 1970 ([UNIX Epoch]) to 3000 AD, including leap years.
 
 Dates are printed using [ISO 8601] format.
 
-| Version     | Compile with                                    | Run                   |
-| :---------- | :---------------------------------------------- | :-------------------- |
-| **C**       | `cd src/c && make gendate`                      | `./gendate`           |
-| **Go**      | `cd src/go && go build gendate.go`              | `./gendate`           |
-| **Scheme**  | `cd src/scheme && csc gendate.scm`              | `./gendate`           |
-| **Shell**   |                                                 | `./src/sh/gendate.sh` |
-| **Haskell** | `cd src/hs && ghc --make gendate.hs -o gendate` | `./gendate`           |
-| **Perl** |  | `./src/sh/gendate.pl`           |
+`cd` to `src/variant`, then compile with the table below:
+
+| Version     | Compile or run with                             |
+| :---------- | :---------------------------------------------- |
+| **C**       | `make gendate && ./gendate`                     |
+| **Go**      | `go build gendate.go && ./gendate`              |
+| **Scheme**  | `csc gendate.scm && ./gendate`                  |
+| **Shell**   | `./gendate.sh`                                  |
+| **Haskell** | `ghc --make gendate.hs -o gendate && ./gendate` |
+| **Perl**    | `./gendate.pl`                                  |
 
 ## Output
 
