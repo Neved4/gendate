@@ -19,18 +19,21 @@ other languages.
 
 <div align="center">
 
-| Version | Run with                                     | Benchmark (≈)  |
-| :------ | :------------------------------------------- | :------------- |
-| **C**   | **`make gendate && ./gendate`**              | **`156.3 ms`** |
-| Rust    | `cargo build -r && ./target/release/gendate` | `213.0 ms`     |
-| Go      | `go build gendate.go && ./gendate`           | `234.6 ms`     |
-| Haskell | `ghc gendate.hs -o gendate && ./gendate`     | `715.0 ms`     |
-| Scheme  | `csc gendate.scm && ./gendate`               | `1.545 s`      |
-| Perl    | `./gendate.pl`                               | `2.310 s`      |
-| Lua     | `./gendate.lua`                              | `3.377 s`      |
-| Shell   | `./gendate.sh`                               | `10.58 m`      |
+| Version | Run with                        | Runtime (≈)  |
+| :------ | :------------------------------ | :----------- |
+| **C**   | **`make gendate && ./gendate`** | **`156 ms`** |
+| Rust    | `cargo run -r`                  | `213 ms`     |
+| Go      | `go run gendate.go`             | `234 ms`     |
+| Haskell | `ghc gendate.hs && ./gendate`   | `715 ms`     |
+| Scheme  | `csi gendate.scm`               | `1.5 s`      |
+| Perl    | `./gendate.pl`                  | `2.3 s`      |
+| Lua     | `./gendate.lua`                 | `3.3 s`      |
+| Shell   | `./gendate.sh`                  | `10.5 m`     |
+| Python  |                                 |              |
+| C#      |                                 |              |
+| F#      |                                 |              |
 
-###### All programs were measured with [`hyperfine`].
+[text](src/cs) [text](src/c) [text](src/fs) [text](src/go) [text](src/hs) [text](src/lua) [text](src/pl) [text](src/py) [text](src/rust) [text](src/scheme) [text](src/sh)
 
 </div>
 
@@ -47,6 +50,23 @@ $ ./gendate
 2999-12-31
 3000-01-01
 ```
+
+## Benchmarks
+
+<div align="center">
+
+| Variant |      Mean [ms] | Min [ms] | Max [ms] |     Relative |
+| :------ | -------------: | -------: | -------: | -----------: |
+| C       |    143.7 ± 4.4 |    140.5 |    168.9 |         1.00 |
+| Rust    |   228.3 ± 17.4 |    209.6 |    315.4 |  1.59 ± 0.13 |
+| Go      |   242.8 ± 12.2 |    225.1 |    274.1 |  1.69 ± 0.10 |
+| Haskell |   659.5 ± 22.9 |    609.7 |    721.7 |  4.59 ± 0.21 |
+| Scheme  | 1684.5 ± 117.4 |   1504.4 |   2237.5 | 11.72 ± 0.89 |
+
+###### All programs were measured with [`hyperfine`].
+
+</div>
+
 
 ## License
 
