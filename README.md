@@ -24,16 +24,12 @@ other languages.
 | **C**   | **`make gendate && ./gendate`** | **`156 ms`** |
 | Rust    | `cargo run -r`                  | `213 ms`     |
 | Go      | `go run gendate.go`             | `234 ms`     |
+| Tcl     | `./gendate.tcl`                 | `501 ms`     |
 | Haskell | `ghc gendate.hs && ./gendate`   | `715 ms`     |
 | Scheme  | `csi gendate.scm`               | `1.5 s`      |
 | Perl    | `./gendate.pl`                  | `2.3 s`      |
 | Lua     | `./gendate.lua`                 | `3.3 s`      |
 | Shell   | `./gendate.sh`                  | `10.5 m`     |
-| Python  |                                 |              |
-| C#      |                                 |              |
-| F#      |                                 |              |
-
-[text](src/cs) [text](src/c) [text](src/fs) [text](src/go) [text](src/hs) [text](src/lua) [text](src/pl) [text](src/py) [text](src/rust) [text](src/scheme) [text](src/sh)
 
 </div>
 
