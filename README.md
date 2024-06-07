@@ -26,6 +26,7 @@ other languages.
 | Go      | `go run gendate.go`             | `234 ms`     |
 | Tcl     | `./gendate.tcl`                 | `501 ms`     |
 | Haskell | `ghc gendate.hs && ./gendate`   | `715 ms`     |
+| Python  | `./gendate.py`                  | `1.3s`       |
 | Scheme  | `csi gendate.scm`               | `1.5 s`      |
 | Perl    | `./gendate.pl`                  | `2.3 s`      |
 | Lua     | `./gendate.lua`                 | `3.3 s`      |
