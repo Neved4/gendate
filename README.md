@@ -73,7 +73,7 @@ This repository is licensed under the terms of the [MIT License].
    
 See the [LICENSE](LICENSE) file for details.
 
-[ISO 8601]: https://en.wikipedia.org/wiki/ISO_8601
-[UNIX Epoch]: https://en.wikipedia.org/wiki/Unix_time
+[ISO 8601]:    https://en.wikipedia.org/wiki/ISO_8601
+[UNIX Epoch]:  https://en.wikipedia.org/wiki/Unix_time
 [MIT License]: https://opensource.org/license/mit/
 [`hyperfine`]: https://github.com/sharkdp/hyperfine
