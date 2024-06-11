@@ -29,9 +29,9 @@ proc main {} {
 	set month 1
 	set day 1
 
-	while {1} {
-		puts [format "%04d-%02d-%02d" $year $month $day]
+	puts [format "%04d-%02d-%02d" $year $month $day]
 
+	while {1} {
 		incr day
 		if {$day > [days_in_month $year $month]} {
 			set day 1
@@ -42,6 +42,8 @@ proc main {} {
 				incr year
 			}
 		}
+
+		puts [format "%04d-%02d-%02d" $year $month $day]
 
 		if {$year == 3000 && $month == 1 && $day == 1} {
 			break
