@@ -19,20 +19,21 @@ other languages.
 
 <div align="center">
 
-| Version | Run with                        | Runtime (≈)  |
-| :------ | :------------------------------ | :----------- |
-| **C**   | **`make gendate && ./gendate`** | **`156 ms`** |
-| Rust    | `cargo run -r`                  | `213 ms`     |
-| Go      | `go run gendate.go`             | `234 ms`     |
-| Tcl     | `./gendate.tcl`                 | `501 ms`     |
-| Haskell | `ghc gendate.hs && ./gendate`   | `715 ms`     |
-| Python  | `./gendate.py`                  | `1.3 s`      |
-| F#      | `dotnet run`                    | `1.4 s`      |
-| C#      | `dotnet run`                    | `1.5 s`      |
-| Scheme  | `csi gendate.scm`               | `1.5 s`      |
-| Perl    | `./gendate.pl`                  | `2.3 s`      |
-| Lua     | `./gendate.lua`                 | `3.3 s`      |
-| Shell   | `./gendate.sh`                  | `10.5 m`     |
+| Version                     | Run with                        | Runtime (≈)  |
+| :-------------------------- | :------------------------------ | :----------- |
+| Rust (without dependencies) | `cargo run -r`                  | `36.6 ms`    |
+| Rust (with one dependency)  | `cargo run -r`                  | `45.5 ms`    |
+| **C**                       | **`make gendate && ./gendate`** | **`156 ms`** |
+| Go                          | `go run gendate.go`             | `234 ms`     |
+| Tcl                         | `./gendate.tcl`                 | `501 ms`     |
+| Haskell                     | `ghc gendate.hs && ./gendate`   | `715 ms`     |
+| Python                      | `./gendate.py`                  | `1.3 s`      |
+| F#                          | `dotnet run`                    | `1.4 s`      |
+| C#                          | `dotnet run`                    | `1.5 s`      |
+| Scheme                      | `csi gendate.scm`               | `1.5 s`      |
+| Perl                        | `./gendate.pl`                  | `2.3 s`      |
+| Lua                         | `./gendate.lua`                 | `3.3 s`      |
+| Shell                       | `./gendate.sh`                  | `10.5 m`     |
 
 </div>
 

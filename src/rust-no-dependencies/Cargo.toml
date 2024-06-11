@@ -1,0 +1,7 @@
+[package]
+name = "gendate"
+version = "0.1.0"
+authors = ["risc", "Neved4"]
+edition = "2021"
+license = "MIT"
+description = "A version of gendate that doesn't have any dependencies."
