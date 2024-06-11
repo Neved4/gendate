@@ -29,7 +29,9 @@ proc main {} {
 	set month 1
 	set day 1
 
-	puts [format "%04d-%02d-%02d" $year $month $day]
+	set fmt "%04d-%02d-%02d"
+
+	puts [format $fmt $year $month $day]
 
 	while {1} {
 		incr day
@@ -43,7 +45,7 @@ proc main {} {
 			}
 		}
 
-		puts [format "%04d-%02d-%02d" $year $month $day]
+		puts [format $fmt $year $month $day]
 
 		if {$year == 3000 && $month == 1 && $day == 1} {
 			break
