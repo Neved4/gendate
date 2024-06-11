@@ -1,0 +1,4 @@
+*.lock        linguist-vendored
+*.md          linguist-vendored
+*.toml        linguist-vendored
+.editorconfig linguist-vendored
