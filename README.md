@@ -1,4 +1,4 @@
-# `dategen` - Generate dates! ⌚️
+# `gendate` - Generate dates! ⌚️
 
 List dates from *January 1, 1970* ([UNIX Epoch]) to 3000 AD, including leap years.
 
